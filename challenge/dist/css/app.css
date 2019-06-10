@@ -1,5 +1,5 @@
-body, html {
-  background-color: #000;
+body, html, main {
+  background-color: #fff;
   box-sizing: border-box;
   height: 100vh;
   margin: 0;

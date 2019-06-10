@@ -1,9 +1,16 @@
-body,html{
-    background-color: #000;
+@import '_variaveis';
+@import '_home';
+@import '_sobre';
+@import '_desafio';
+
+body,html,main{
+    background-color: #fff;
 	box-sizing: border-box;
 	height: 100vh;
 	margin: 0;
 	padding: 0;
     width: 100vw;
-    
+ 
 }
+
+// sass --watch ./scss:./dist/css
