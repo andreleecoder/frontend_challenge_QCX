@@ -1,9 +1,8 @@
-@import '_home';
-@import '_sobre';
-@import '_desafio';
+@import './_home';
+@import './_sobre';
+@import './_desafio';
 
-body,html,main{
-	background: url(../img/officeBg.jpg);   
+body,html{  
 	box-sizing: border-box;
 	height: 100vh;
 	margin: 0;
