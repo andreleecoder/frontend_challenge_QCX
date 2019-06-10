@@ -1,0 +1,15 @@
+{
+  "name": "challenge",
+  "version": "1.0.0",
+  "description": "challeng from qconcurso to frontend position",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass -w scss/ -o dist --recursive"
+  },
+  "repository": {
+    "type": "git",
+    "url": "frontend_challenge_QCX"
+  },
+  "author": "Andre Lee",
+  "license": "ISC"
+}
