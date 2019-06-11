@@ -49,10 +49,17 @@ header {
 
 .sobre {
   color: #000;
-  position: absolute;
+  height: 100vh;
   left: 10vw;
+  position: absolute;
   text-align: center;
   width: 80vw;
+}
+
+.desafio {
+  background: #ccebdb;
+  height: 100vh;
+  width: 100vw;
 }
 
 body, html {
