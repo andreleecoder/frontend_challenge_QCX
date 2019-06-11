@@ -47,6 +47,14 @@ header {
   top: 90vh;
 }
 
+.sobre {
+  color: #000;
+  position: absolute;
+  left: 10vw;
+  text-align: center;
+  width: 80vw;
+}
+
 body, html {
   box-sizing: border-box;
   font-family: sans-serif;
