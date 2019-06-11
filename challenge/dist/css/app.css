@@ -2,7 +2,9 @@
   background-image: url(../../img/officeBg.jpg);
   background-repeat: no-repeat;
   height: 100vh;
+  position: relative;
   width: 100vw;
+  justify-content: center;
 }
 
 header {
@@ -19,6 +21,30 @@ header {
   font-size: 0.9rem;
   text-align: center;
   font-weight: lighter;
+}
+
+.home-content {
+  position: relative;
+  display: block;
+  justify-content: center;
+}
+
+.titulo {
+  font-size: 1.5rem;
+  left: 25vw;
+  position: absolute;
+  text-align: center;
+  top: 40vh;
+}
+
+.icones {
+  display: grid;
+  grid-gap: 0.5rem;
+  grid-template-columns: 1fr 1fr 1fr;
+  left: 45vw;
+  position: absolute;
+  text-align: center;
+  top: 90vh;
 }
 
 body, html {
