@@ -4,11 +4,16 @@
 
 body,html{  
 	box-sizing: border-box;
+	font-family: sans-serif;
+	color: #fff;
 	height: 100vh;
 	margin: 0;
 	padding: 0;
     width: 100vw;
- 
+	
 }
+a{
+	color: #fff;
+	text-decoration: none;}
 
 // sass --watch ./scss:./dist/css

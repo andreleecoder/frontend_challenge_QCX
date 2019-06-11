@@ -1,16 +1,39 @@
 .home {
-  background-image: url(../img/officeBg.jpg);
-  background-size: 100% 100%;
+  background-image: url(../../img/officeBg.jpg);
+  background-repeat: no-repeat;
   height: 100vh;
   width: 100vw;
 }
 
+header {
+  align-content: center;
+  display: grid;
+  grid-template-columns: 3fr 1fr 1fr 1fr;
+  height: 10vh;
+  justify-content: space-around;
+  position: fixed;
+  width: 100vw;
+}
+
+.__header {
+  font-size: 0.9rem;
+  text-align: center;
+  font-weight: lighter;
+}
+
 body, html {
   box-sizing: border-box;
+  font-family: sans-serif;
+  color: #fff;
   height: 100vh;
   margin: 0;
   padding: 0;
   width: 100vw;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
 }
 
 /*# sourceMappingURL=app.css.map */
