@@ -4,15 +4,14 @@
   height: 100vh;
   position: relative;
   width: 100vw;
-  justify-content: center;
+  justify-content: space-around;
 }
 
 header {
   align-content: center;
   display: grid;
   grid-template-columns: 3fr 1fr 1fr 1fr;
-  height: 10vh;
-  justify-content: space-around;
+  height: 8vh;
   position: fixed;
   width: 100vw;
 }
@@ -23,27 +22,21 @@ header {
   font-weight: lighter;
 }
 
-.home-content {
-  position: relative;
-  display: block;
-  justify-content: center;
-}
-
 .titulo {
-  font-size: 1.5rem;
-  left: 25vw;
+  font-size: 1.2rem;
+  margin: 8vw;
+  width: 80vw;
   position: absolute;
   text-align: center;
-  top: 40vh;
+  top: 20vh;
 }
 
 .icones {
   display: grid;
-  grid-gap: 0.5rem;
   grid-template-columns: 1fr 1fr 1fr;
-  left: 45vw;
   position: absolute;
-  text-align: center;
+  margin: 0vh 20vw;
+  width: 80vw;
   top: 90vh;
 }
 
