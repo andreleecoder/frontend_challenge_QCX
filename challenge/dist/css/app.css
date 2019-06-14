@@ -41,6 +41,7 @@ header {
 }
 
 .sobre {
+  background: #fff;
   color: #000;
   height: 100vh;
   left: 10vw;
@@ -51,7 +52,11 @@ header {
 
 .desafio {
   background: #ccebdb;
+  color: #000;
   height: 100vh;
+  position: absolute;
+  top: 200%;
+  text-align: center;
   width: 100vw;
 }
 
@@ -59,6 +64,8 @@ body, html {
   box-sizing: border-box;
   font-family: sans-serif;
   color: #fff;
+  display: grid;
+  grid-template-rows: 4fr 4fr 4fr;
   height: 100vh;
   margin: 0;
   padding: 0;
