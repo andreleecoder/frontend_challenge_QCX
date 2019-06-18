@@ -3,13 +3,18 @@
   "version": "1.0.0",
   "description": "challeng from qconcurso to frontend position",
   "main": "index.js",
+  "homepage":"https://andreleecoder.github.io/frontend_challenge_QCX",
   "scripts": {
-    "sass": "node-sass -w scss/ -o dist --recursive"
+    "sass": "node-sass -w scss/ -o dist --recursive",
+    "deploy":"gh-pages -d dist"
   },
   "repository": {
     "type": "git",
     "url": "frontend_challenge_QCX"
   },
   "author": "Andre Lee",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "gh-pages": "^2.0.1"
+  }
 }
