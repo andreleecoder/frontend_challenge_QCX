@@ -6,7 +6,7 @@
   "homepage":"https:andreleecoder.github.io/frontend_challenge_QCX",
   "scripts": {
     "sass": "node-sass -w scss/ -o dist --recursive",
-     "deploy":"gh-pages -d ./challenge/dist"
+     "deploy":"gh-pages -d dist"
   },
   "repository": {
     "type": "git",

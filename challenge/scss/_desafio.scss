@@ -1,17 +1,32 @@
 .desafio{
     background: #ccebdb;
     color:#000;
-    height: 100vh;
+    height: 150%;
+    justify-content: center;
     position: absolute;
     top: 200%;
     text-align: center;
     width: 100vw;
+}
+.card{
+    background: #fff;
+    left: 10vw;
+    list-style: none;
+    position: absolute;
+    width: 80vw;
+    li{
+        list-style: none;
+        text-align: left;
+    }
 }
 .pic{
     border-radius: 100%;
 }
 .info{
     list-style: none;
+}
+.profile{
+    color: #047904;
 }
 button{
     background: #fff;

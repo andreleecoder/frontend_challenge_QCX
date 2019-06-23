@@ -76,26 +76,36 @@
         </div>
         <div id="desafio" class="desafio">
             <h1>Desafio</h1>
-            <div ><img class="pic" src="../img/portrait.jpg" alt=""></div>
-            <a href="https://github.com/andreleecoder" target="_blank" class="profile">visitar perfil</a >
-
-            <div >
-                <ul class="info">
-                    <li class="repos">Repositórios</li>
-                    <li class="flwrs">seguidores</li>
-                    <li class="flwns">seguindo</li>
-                </ul>
-            </div>
+            
+            <div class="card">
+            <div ><img class="pic" src="../img/portrait.jpg" alt="">
+           <div><a href="https://github.com/andreleecoder" target="_blank" class="profile ">visitar perfil</a ></div>
+             
+            
+        <ul class="info">
+            <li class="repos"></li>
+            <li class="flwrs"></li>
+            <li class="flwn"></li>
+        </ul>
+            
             <div>
-                <button class="__btn-text">Ver repositórios</button>
-                <button class="__btn-text">ver favoritos</button>
+                <button id="btnRepos" class="__btn-text" onClick="getRepos(
+                'https://api.github.com/users/andreleecoder/repos?&per_page=100'
+                )">Ver repositórios</button>
+
+                <button class="__btn-text" onClick="getRepos(
+                'https://api.github.com/users/cmoutella/starred?&per_page=100'
+                )"
+                >ver favoritos</button>
+              
+                <div class="repo-block">
+                        <h3 class="qcx-repo__title">Lista de Repositórios</div>
+                        <ul class="qcx-repo__list" id="repo-list"></ul>
+                    </div>         
             </div>
-            <div class="list-repo"></div>
-            <div class="list-fav"></div>
-        </div>
  </main>
  <script src="./index.js"></script>   
  <script src="https://use.fontawesome.com/9f94781652.js"></script>   
    
 </body>
-</html>
+</html> 
