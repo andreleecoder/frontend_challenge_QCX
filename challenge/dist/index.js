@@ -1,4 +1,4 @@
-const url = "https://api.github.com/users/andreleecoder"
+const gtapi = "https://api.github.com/users/andreleecoder"
 const ul = document.getElementById('repo-list')
 
 //Create element
@@ -12,9 +12,9 @@ function append(parent, el) {
 }
 
 //Get the list of user's repositories
-function getRepos(url) {
+async function getRepos(gtapi) {
 	ul.innerHTML=''
-	fetch(url)
+	await fetch(gtapi)
 		.then(resp => resp.json())
 		.then(response => {
 			return response.map(function(repo) {
@@ -26,13 +26,13 @@ function getRepos(url) {
 		.catch(function(error) {
 			console.log(error)
 		})
-	document.querySelector('.repo-block').classList.add('repo-block__list')
+	document.querySelector('.repo-block')
 }
 
 //Show User's Data
-const fetchData = (url) => {
+ async function fetchData (gtapi) {
 	let userData;
-	fetch(url)
+	 await fetch(gtapi)
 	.then(resp => resp.json())
 	.then(data => (userData = data))
 	.then(() => {
@@ -41,5 +41,4 @@ const fetchData = (url) => {
 		document.querySelector(".flwn").innerHTML = 'Seguindo: ' + userData.following
 	})
 }
-
-fetchData(url);
+fetchData(gtapi);

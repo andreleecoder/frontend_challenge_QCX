@@ -1,6 +1,13 @@
+//colors
+$dark-green:#0d2f16;
+$green: #047904;
+$light-green:#9fd7ba;
+
 @import './_home';
 @import './_sobre';
 @import './_desafio';
+
+
 
 body,html{  
 	box-sizing: border-box;
@@ -8,101 +15,149 @@ body,html{
 	color: #fff;
 	display: grid;
 	grid-template-rows: 2fr 2fr 2fr;
-	height: 100vh;
+	height:100%;
 	margin: 0;
 	padding: 0;
+	position: relative;
     width: 100vw;
 	
+}
+main{
+	position: relative;
 }
 a{
 	color:#fff;
 	text-decoration: none;
 }
-@media only screen and (min-width: 900px) {
-	
+.footer{
+    align-items: center;
+    background-color: #373737;
+	bottom: 0;
+    color: #fff;
+    font-size: 1rem;
+    height: 7rem;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    width: 100vw;
+    text-align: center;
+}
+
+
+
+@media only screen and (min-width: 600px) {
+	      
 	.card{
-		background: #fff;
-		border-radius: 3px;
-		box-shadow: 1px 1px 1px 3px #88888860;
-		height: 75%;
-		justify-content: space-evenly;
-		left: 10vw;
-		list-style: none;
-		position: absolute;
-		width: 80vw;
-	
-		
-	}        
-	.pic{
-		border-radius: 100%;
-		height: 10rem;
-		width: 10rem;
-		position: absolute;
-		left: 2rem;
-		top: 2rem;
-	}
-    .info{
-		list-style: none;
-		position: absolute;
-		left: 25rem;
-		top: 1.5rem;
-      li{
-		list-style: none;
+    background: #fff;
+    border-radius: 3px;
+	box-shadow: 1px 1px 1px 3px #88888860;
+    left: 10vw;
+    list-style: none;
+    position: absolute;
+    width: 80vw;
+    li{
+        list-style: none;
         text-align: left;
-	  }
-	}
-	.profile{
-		color: #047904;
-		position: absolute;
-		left: 4rem;
-		top: 11rem;
-	}
+    }
+}
+.pic{
+    border-radius: 100%;
+    margin-top: 1rem;
+    position: absolute;
+    left: 2rem;
+    top: 2rem;
+    width: 10rem;
+}
+.info{
+    list-style: none;
+    position: absolute;
+    left: 15rem;
+    top: 3.5rem;
+}
+.profile{
+    color: $dark-green;
+    left: 4rem;
+    position: absolute;
+	top: 13rem;
+}
+button{
+    background: #fff;
+    border-radius: 0.5rem;
+    border:1px solid $green;
+	height: 2rem;
+	margin: 0.5rem;
+    outline: none;
+    width: 9rem;
+}
+.__btn-text{
+    color: #047904;
+    font-size: 1rem;
+    font-weight: bolder;
 
-	.btns{
-		align-items: center;
-		position: absolute;
-		left: 25rem;
-		top: 10rem;
-	}
-	button{
-		background: #fff;
-		border-radius: 0.5rem;
-		border:1px solid #047904;
-		height: 2rem;
-		outline: none;
-		width: 9rem;
-		
-	}
-	.__btn-text{
-		color: #047904;
-		font-size: 1rem;
-		font-weight: bolder;
-	
-	}
-	.repo-block{
-		align-items: center;
-		justify-content: center;
-		position: relative;
-		top: 14rem;
+}
+.btns{
+    align-items: center;
+    position: absolute;
+    left: 20rem;
+    top: 13rem;
+}
+.repo-block{
+    .__list{
+   margin-top: 16rem;
+}
+   
+    .__title{
+        width: 50vw;
+        margin-left: 2rem;
+        text-align: left;
+        margin-top:16rem;
+    }
+  
+  li{
+    box-sizing: border-box;
+    font-size: 0.8rem;
+    margin-left: -2.5rem;
+    padding: 0.3rem;
+    padding-left: 3rem;
+}
 
-      
-	  li{
-		box-sizing: border-box;
-		font-size: 0.8rem;
-		margin-left: -2.5rem;
-		padding: 0.3rem;
-		padding-left: 3rem;
-	}
+    li:nth-child(even){
+        background-color: #fff;
+    }
+    li:nth-child(odd){
+        background-color: $light-green;
+    }
+}
 
-		li:nth-child(even){
-			background-color: #fff;
-		}
-		li:nth-child(odd){
-			background-color: #047904;
-		}
-	}
-	
+
   }
+  @media screen and (max-width: 500px) {
+	.sobre{
+		background: #fff;
+		color:#000;
+		font-size: 0.8rem;
+		left: 10vw;
+		position: absolute;
+		text-align: center;
+		width: 80vw;}
+		.footer{
+			align-items: center;
+			background-color: #373737;
+			bottom: -20%;
+			color: #fff;
+			font-size: 1rem;
+			height: 7rem;
+			margin: 0;
+			padding: 0;
+			position: absolute;
+			width: 100vw;
+			text-align: center;
+		}
+  }
+	      
+
+
+
 
 
 // sass --watch ./scss:./dist/css

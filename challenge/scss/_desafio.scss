@@ -1,7 +1,7 @@
 .desafio{
-    background: #ccebdb;
+    background: $light-green;
     color:#000;
-    height: 150%;
+    height: 100%;
     justify-content: center;
     position: absolute;
     top: 200%;
@@ -27,27 +27,31 @@
     width: 35%;
 }
 .info{
+    color:$dark-green;
     list-style: none;
 }
 .profile{
-    color: #047904;
+    color:$dark-green;
 }
 button{
     background: #fff;
     border-radius: 0.5rem;
-    border:1px solid #047904;
+    border:1px solid $green;
     height: 2rem;
     outline: none;
     width: 9rem;
 }
 .__btn-text{
-    color: #047904;
+    color: $green;
     font-size: 1rem;
     font-weight: bolder;
 
 }
 .repo-block{
-  
+
+   .__title{
+    color: $dark-green;
+}
   li{
     box-sizing: border-box;
     font-size: 0.8rem;
@@ -60,8 +64,10 @@ button{
         background-color: #fff;
     }
     li:nth-child(odd){
-        background-color: #047904;
+        background-color: $light-green;
     }
 }
+
+
 
 
