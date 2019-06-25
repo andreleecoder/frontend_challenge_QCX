@@ -23,6 +23,7 @@
 }
 .pic{
     border-radius: 100%;
+    margin-top: 1rem;
     width: 35%;
 }
 .info{
@@ -46,11 +47,6 @@ button{
 
 }
 .repo-block{
-    align-content: flex-start;
-    position: absolute;
-    top:-10rem;
-
-
   
   li{
     box-sizing: border-box;

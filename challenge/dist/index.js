@@ -26,7 +26,7 @@ function getRepos(url) {
 		.catch(function(error) {
 			console.log(error)
 		})
-	document.querySelector('.repo-block')
+	document.querySelector('.repo-block').classList.add('repo-block__list')
 }
 
 //Show User's Data

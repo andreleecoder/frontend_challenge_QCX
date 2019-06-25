@@ -78,6 +78,7 @@ header {
 
 .pic {
   border-radius: 100%;
+  margin-top: 1rem;
   width: 35%;
 }
 
@@ -104,12 +105,6 @@ button {
   font-weight: bolder;
 }
 
-.repo-block {
-  align-items: center;
-  justify-content: center;
-  position: relative;
-  top: 14rem;
-}
 .repo-block li {
   box-sizing: border-box;
   font-size: 0.8rem;
@@ -159,8 +154,8 @@ a {
     height: 10rem;
     width: 10rem;
     position: absolute;
-    left: 1rem;
-    top: 1rem;
+    left: 2rem;
+    top: 2rem;
   }
 
   .info {
@@ -177,8 +172,8 @@ a {
   .profile {
     color: #047904;
     position: absolute;
-    left: 3rem;
-    top: 12rem;
+    left: 4rem;
+    top: 11rem;
   }
 
   .btns {
