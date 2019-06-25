@@ -13,7 +13,7 @@ header {
   display: grid;
   grid-template-columns: 3fr 1fr 1fr 1fr;
   height: 8vh;
-  position: fixed;
+  position: absolute;
   width: 100vw;
 }
 
@@ -64,6 +64,8 @@ header {
 
 .card {
   background: #fff;
+  border-radius: 3px;
+  box-shadow: 1px 1px 1px 3px #88888860;
   left: 10vw;
   list-style: none;
   position: absolute;
@@ -76,6 +78,7 @@ header {
 
 .pic {
   border-radius: 100%;
+  width: 35%;
 }
 
 .info {
@@ -88,17 +91,37 @@ header {
 
 button {
   background: #fff;
-  border-radius: 7rem;
+  border-radius: 0.5rem;
   border: 1px solid #047904;
-  height: 3rem;
+  height: 2rem;
   outline: none;
-  width: 10rem;
+  width: 9rem;
 }
 
 .__btn-text {
   color: #047904;
   font-size: 1rem;
   font-weight: bolder;
+}
+
+.repo-block {
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  top: 14rem;
+}
+.repo-block li {
+  box-sizing: border-box;
+  font-size: 0.8rem;
+  margin-left: -2.5rem;
+  padding: 0.3rem;
+  padding-left: 3rem;
+}
+.repo-block li:nth-child(even) {
+  background-color: #fff;
+}
+.repo-block li:nth-child(odd) {
+  background-color: #047904;
 }
 
 body, html {
@@ -114,8 +137,91 @@ body, html {
 }
 
 a {
-  color: #000;
+  color: #fff;
   text-decoration: none;
+}
+
+@media only screen and (min-width: 900px) {
+  .card {
+    background: #fff;
+    border-radius: 3px;
+    box-shadow: 1px 1px 1px 3px #88888860;
+    height: 75%;
+    justify-content: space-evenly;
+    left: 10vw;
+    list-style: none;
+    position: absolute;
+    width: 80vw;
+  }
+
+  .pic {
+    border-radius: 100%;
+    height: 10rem;
+    width: 10rem;
+    position: absolute;
+    left: 1rem;
+    top: 1rem;
+  }
+
+  .info {
+    list-style: none;
+    position: absolute;
+    left: 25rem;
+    top: 1.5rem;
+  }
+  .info li {
+    list-style: none;
+    text-align: left;
+  }
+
+  .profile {
+    color: #047904;
+    position: absolute;
+    left: 3rem;
+    top: 12rem;
+  }
+
+  .btns {
+    align-items: center;
+    position: absolute;
+    left: 25rem;
+    top: 10rem;
+  }
+
+  button {
+    background: #fff;
+    border-radius: 0.5rem;
+    border: 1px solid #047904;
+    height: 2rem;
+    outline: none;
+    width: 9rem;
+  }
+
+  .__btn-text {
+    color: #047904;
+    font-size: 1rem;
+    font-weight: bolder;
+  }
+
+  .repo-block {
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: 14rem;
+  }
+  .repo-block li {
+    box-sizing: border-box;
+    font-size: 0.8rem;
+    margin-left: -2.5rem;
+    padding: 0.3rem;
+    padding-left: 3rem;
+  }
+  .repo-block li:nth-child(even) {
+    background-color: #fff;
+  }
+  .repo-block li:nth-child(odd) {
+    background-color: #047904;
+  }
 }
 
 /*# sourceMappingURL=app.css.map */

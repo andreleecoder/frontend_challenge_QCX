@@ -10,6 +10,8 @@
 }
 .card{
     background: #fff;
+    border-radius: 3px;
+	box-shadow: 1px 1px 1px 3px #88888860;
     left: 10vw;
     list-style: none;
     position: absolute;
@@ -21,6 +23,7 @@
 }
 .pic{
     border-radius: 100%;
+    width: 35%;
 }
 .info{
     list-style: none;
@@ -30,11 +33,11 @@
 }
 button{
     background: #fff;
-    border-radius: 7rem;
+    border-radius: 0.5rem;
     border:1px solid #047904;
-    height: 3rem;
+    height: 2rem;
     outline: none;
-    width: 10rem;
+    width: 9rem;
 }
 .__btn-text{
     color: #047904;
@@ -42,3 +45,26 @@ button{
     font-weight: bolder;
 
 }
+.repo-block{
+    position: absolute;
+    top:-10rem;
+
+
+  
+  li{
+    box-sizing: border-box;
+    font-size: 0.8rem;
+    margin-left: -2.5rem;
+    padding: 0.3rem;
+    padding-left: 3rem;
+}
+
+    li:nth-child(even){
+        background-color: #fff;
+    }
+    li:nth-child(odd){
+        background-color: #047904;
+    }
+}
+
+

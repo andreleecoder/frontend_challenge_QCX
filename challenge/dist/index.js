@@ -26,7 +26,7 @@ function getRepos(url) {
 		.catch(function(error) {
 			console.log(error)
 		})
-	document.querySelector('.repo-block').classList.add('qcx-repo--active')
+	document.querySelector('.repo-block')
 }
 
 //Show User's Data

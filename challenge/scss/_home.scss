@@ -13,7 +13,7 @@ header{
     display:grid;
     grid-template-columns: 3fr 1fr 1fr 1fr;
     height: 8vh;
-    position: fixed;
+    position: absolute;
     width: 100vw;  
 }
 .__header{
