@@ -173,6 +173,7 @@ a {
     list-style: none;
     position: absolute;
     width: 80vw;
+    margin-bottom: 145px;
   }
   .card li {
     list-style: none;
@@ -271,7 +272,7 @@ a {
     height: 7rem;
     margin: 0;
     padding: 0;
-    position: absolute;
+    position: fixed;
     width: 100vw;
     text-align: center;
   }
