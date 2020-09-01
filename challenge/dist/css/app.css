@@ -70,7 +70,9 @@ header {
   list-style: none;
   position: absolute;
   width: 80vw;
+  margin-bottom: 145px;
 }
+
 .card li {
   list-style: none;
   text-align: left;
@@ -109,6 +111,7 @@ button {
 .repo-block .__title {
   color: #0d2f16;
 }
+
 .repo-block li {
   box-sizing: border-box;
   font-size: 0.8rem;
@@ -116,9 +119,11 @@ button {
   padding: 0.3rem;
   padding-left: 3rem;
 }
+
 .repo-block li:nth-child(even) {
   background-color: #fff;
 }
+
 .repo-block li:nth-child(odd) {
   background-color: #9fd7ba;
 }
@@ -154,7 +159,7 @@ a {
   height: 7rem;
   margin: 0;
   padding: 0;
-  position: absolute;
+  position: fixed;
   width: 100vw;
   text-align: center;
 }
@@ -173,7 +178,6 @@ a {
     list-style: none;
     text-align: left;
   }
-
   .pic {
     border-radius: 100%;
     margin-top: 1rem;
@@ -182,21 +186,18 @@ a {
     top: 2rem;
     width: 10rem;
   }
-
   .info {
     list-style: none;
     position: absolute;
     left: 15rem;
     top: 3.5rem;
   }
-
   .profile {
     color: #0d2f16;
     left: 4rem;
     position: absolute;
     top: 13rem;
   }
-
   button {
     background: #fff;
     border-radius: 0.5rem;
@@ -206,20 +207,17 @@ a {
     outline: none;
     width: 9rem;
   }
-
   .__btn-text {
     color: #047904;
     font-size: 1rem;
     font-weight: bolder;
   }
-
   .btns {
     align-items: center;
     position: absolute;
     left: 20rem;
     top: 13rem;
   }
-
   .repo-block .__list {
     margin-top: 16rem;
   }
@@ -243,6 +241,7 @@ a {
     background-color: #9fd7ba;
   }
 }
+
 @media screen and (max-width: 500px) {
   .sobre {
     background: #fff;
@@ -253,7 +252,6 @@ a {
     text-align: center;
     width: 80vw;
   }
-
   .desafio {
     background: #9fd7ba;
     color: #000;
@@ -264,7 +262,6 @@ a {
     text-align: center;
     width: 100vw;
   }
-
   .footer {
     align-items: center;
     background-color: #373737;
