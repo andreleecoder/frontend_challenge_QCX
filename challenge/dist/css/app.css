@@ -165,7 +165,7 @@ a {
   height: 5rem;
   margin: 0;
   padding: 0;
-  position: fixed;
+  position: absolute;
   width: 100vw;
   text-align: center;
 }
